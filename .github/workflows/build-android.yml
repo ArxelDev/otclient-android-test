@@ -53,9 +53,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - build_type: releaseSkinDebug
-            gradle_task: assembleReleaseSkinDebug
-            apk_dir: releaseSkinDebug
+          - build_type: release
+            gradle_task: assembleRelease
+            apk_dir: release
 
     steps:
       - name: Checkout repository
